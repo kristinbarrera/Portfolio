@@ -1,0 +1,114 @@
+@import '../fonts/fonts.css';
+
+.navbar {
+  padding-top: 1%;
+  padding-right: 50px;
+  
+
+  position: fixed;
+  top: 0;
+  height: 70px;
+ 
+  width: 100%;
+  background-color: #13131A;
+  z-index: 1;
+ 
+}
+
+
+.navbar.hidden {
+  top: -80px; 
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  gap: 80px;
+  
+  
+
+}
+
+.navbar li{
+  list-style: none;
+}
+
+.navbar li a {
+  font-family: Nunito;
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.772px;
+
+  
+}
+
+.navbar li a:hover {
+  color: var(--navy, #4A55A2);
+ 
+}
+
+.navbar a {
+  text-decoration: none;
+  
+}
+/*dispositivos moviles */
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    padding: 1% 20px; 
+    
+
+   
+  
+  }
+
+  .menu-button {
+    
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 95%;
+    padding-top: 2%;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-button img {
+    width: 30px;
+    
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #13131A;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+    
+   
+  }
+
+  .navbar-list.visible {
+    display: flex;
+  }
+
+  .navbar-list li {
+    margin-bottom: 10px;
+  } 
+}

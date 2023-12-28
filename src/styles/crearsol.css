@@ -1,0 +1,127 @@
+
+.CrearSoluciones{
+ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 15%; 
+    margin-right: 15%;
+}
+.sol-titulo{
+    
+    margin-bottom: 2%;
+    color: #FFF;
+    font-family: San Francisco;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.solucion-items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:48px;
+
+
+    
+    align-items: center;
+    
+}
+
+.solucion-item{
+    width: 49%;
+    height: 372px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    align-items: center;
+    border-radius: 25px;
+    background: rgba(74, 85, 162, 0.25);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+    
+}
+.solucion-items-horizontal{
+    display: flex;
+    width: 100%;
+    gap:2%;
+
+}
+.titulo-sol{
+    color: #FFF;
+    font-family: San Francisco-Bold;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.sub-sol{
+    width: 300px;
+    height: 79px;
+    flex-shrink: 0;
+    color: var(--white, #F5F5FA);
+    text-align: center;
+    font-family: Poppins;
+    width: 400px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.acerca-mi{
+    
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.linea-acerca-de-mi{
+    width: 72px;
+    height: 2px;
+    background-color: #4A55A2;
+}
+
+@media screen and (max-width: 768px) {
+    .solucion-items-horizontal {
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    }
+
+    .sol-titulo{
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+       
+    }
+    .solucion-item{
+        width: 100%;
+    }
+    .solucion-items{
+        gap:16px;
+    }
+
+    .CrearSoluciones{
+        gap:24px;
+    }
+    .subtitulo-solucion{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub-sol{
+        width: 90%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .CrearSoluciones{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
